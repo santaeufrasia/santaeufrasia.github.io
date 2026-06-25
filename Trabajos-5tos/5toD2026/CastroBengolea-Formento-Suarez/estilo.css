@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1a1f1c; 
+    color: #e0e0e0;
+    font-family: 'Share Tech', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto; 
+}
+
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: #94a98c; 
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #4a5745;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-family: 'Cinzel', serif;
+    color: #dfb15b; 
+    font-size: 1.8rem;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    text-align: justify;
+    color: #cccccc;
+    background-color: #242b27; 
+    padding: 20px;
+    border-left: 4px solid #dfb15b; 
+    border-radius: 4px;
+}
+
+
+p a {
+    color: #dfb15b;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+img, video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border: 3px solid #4a5745;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+.imagen1, .imagen2 {
+    max-height: 350px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+a img:hover {
+    transform: scale(1.02);
+    border-color: #dfb15b;
+}
+
+
+video {
+    width: 100%;
+    max-width: 500px; 
+    background-color: #000;
+}
+
+
+body > a:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    color: #888888;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+body > a:last-of-type:hover {
+    color: #dfb15b;
+}
+
+
+.barra-navegacion {
+    background-color: #242b27; 
+    border-top: 3px solid #4a5745; 
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    padding: 15px 0;
+    margin-top: 40px;
+    border-radius: 6px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+
+.nav-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-family: 'Cinzel', serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; 
+}
+
+
+.nav-link:hover {
+    color: #dfb15b; 
+    border-bottom: 2px solid #dfb15b; 
+    transform: translateY(-2px); 
+}
