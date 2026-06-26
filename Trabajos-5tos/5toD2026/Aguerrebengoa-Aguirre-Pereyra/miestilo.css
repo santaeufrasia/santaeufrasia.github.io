@@ -1,0 +1,65 @@
+h1{text-align: center;
+   letter-spacing: 5px;
+   color: #00539f;
+   text-decoration: underline;
+   background-color: rgba(181,0, 0.2);
+ }
+ p {
+    /*estas son las reglas para todos los parrafos*/
+   /*color: red;*/
+   font-size: 20px;
+   background-color: rgb(181, 181, 232);
+   
+}
+
+.destacados{
+   border: solid;
+   border-color: ;
+}
+p {font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;}
+
+h1{
+text-align: center;
+letter-spacing: 5px;
+color: #005390;
+text-decoration: underline;
+background-color: rgba(181,0,0,0.2);
+
+margin: 20px;
+padding: 15px;
+border: 3px solid #005390;
+}
+
+p{
+font-size: 20px;
+background-color: rgb(181,181,232);
+
+margin: 15px;
+padding: 10px;
+border: 2px solid black;
+}
+
+.destacados{
+border: solid;
+border-color: red;
+padding: 10px;
+margin: 15px;
+}
+nav{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: #005390;
+padding: 10px;
+}
+
+nav a{
+color: white;
+text-decoration: none;
+margin: 15px;
+}
+

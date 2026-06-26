@@ -1,0 +1,41 @@
+h1{text-align: center;
+ letter-spacing: 5px;
+ color: rgb(181, 181, 232);
+ text-decoration: underline; background-color: rgba(181,0, 0.2);  
+	background-color: rgb(121, 100, 167); 
+}
+p { 
+     /*estas son las reglas para todos los parrafos*/ /*color: red;*/ font-size: 20px;
+	 background-color: rgb(181, 181, 232); 
+	}
+
+p {
+   
+  font-family: "Pliant", sans-serif;
+  font-optical-sizing:  auto; 
+  font-weight: <weight>;
+  font-style:  normal; 
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+nav {
+ position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: rgb(121, 100, 167); 
+padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+
+}
+
+body {
+  margin-top: 60px;
+}

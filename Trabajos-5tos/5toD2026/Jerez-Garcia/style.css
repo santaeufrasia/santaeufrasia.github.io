@@ -1,0 +1,72 @@
+p {
+  color: lightblue;
+  font-size: 30px;
+  border: solid;
+  border-radius: 15px;
+
+
+}
+h1{
+text-align: center;
+text-decoration: underline; 
+font-family:  ;
+  font-family: "Playwrite AU VIC Guides", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+letter-spacing: 2pz;
+ }
+ #p1{
+  color: hotpink;
+  border-radius: 15px;
+  font-size: 30px;
+  border: solid;
+ }
+ img{
+ border: solid; 
+  }
+  a{
+    border: solid;
+  }
+
+  .box {
+  width: 1000px;
+  height: 1000px;
+  background: red;
+  color: white;
+}
+
+.cajaImagenTexto{
+  background:invisiblecolor;
+  border: solid;
+  border-radius: 10px;
+  width: 60%;
+  height: 60%;
+  display: flex; /* Alinea los elementos en una fila */
+
+  /*
+  position: relative;
+  top: 20px;
+  left: 10px;
+  */
+  
+  align-items: center; /* Centra el texto verticalmente con respecto a la imagen */
+  --gap: 20px; /* Espacio de separación entre la imagen y el texto */
+  
+}
+
+.imagenEnCaja {
+  width: 40%;
+  height: 50%;
+  flex-shrink: 0;
+
+}
+
+.textoEnCaja{
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10;
+  margin-bottom: 0;
+}

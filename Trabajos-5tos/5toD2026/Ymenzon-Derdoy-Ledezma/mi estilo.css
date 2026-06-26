@@ -1,0 +1,83 @@
+CSS
+/* 1. Reset básico para que abarque toda la página sin márgenes ocultos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 2. Configuración del cuerpo (ocupa el 100% de la pantalla) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6; /* Un gris claro muy suave */
+    color: #333333;            /* Texto oscuro para buena lectura */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;         /* Fuerza a que el cuerpo ocupe todo el alto visual */
+}
+
+/* 3. Contenedor principal centrado y limpio */
+.container {
+    width: 90%;
+    max-width: 800px;          /* No se estira infinitamente en pantallas grandes */
+    margin: 40px auto;         /* Centra el bloque y le da aire arriba/abajo */
+    background: #ffffff;       /* Fondo blanco para resaltar el contenido */
+    padding: 30px;
+    border-radius: 8px;        /* Bordes suavemente redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    flex: 1;                   /* Empuja el footer hacia abajo si hay poco texto */
+}
+
+/* 4. Estilos de texto básicos */
+h1 {
+    color: #2c3e50;            /* Azul oscuro elegante */
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* 5. Un botón sencillo por si lo necesitas */
+.boton {
+    display: inline-block;
+    background-color: #3498db; /* Azul vivo */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.boton:hover {
+    background-color: #2980b9; /* Azul más oscuro al pasar el cursor */
+}
+
+/* 6. Pie de página que se queda abajo */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.barra-navegacion {
+    background-color: #242b27; 
+    border-top: 3px solid #4a5745; 
+    display: flex;
+    justify-content: center; 
+    gap: 30px; 
+    padding: 15px 0;
+    margin-top: 40px;
+    border-radius: 6px;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3); 
