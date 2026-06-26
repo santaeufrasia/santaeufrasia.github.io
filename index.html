@@ -1,16 +1,144 @@
 <html>
   <head>
-    
-  </head>
+    <meta charset="utf-8">
 
-  <body>
-<center>
-    <h1>Colegio Santa Eufrasia</h1>
-</center>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-  <p>Este sitio sirve como soporte para los trabajos de estudiantes de 5to año</p>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
 
+    <style>
+        * { box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; margin: 0; background-color: #f4f4f4; }
+
+        /* Contenedor principal del slideshow */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: 50px auto;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Oculta las imágenes por defecto */
+        .slide {
+            display: none;
+            width: 100%;
+        }
+        
+        .slide img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+        }
+
+        /* Efecto de desvanecimiento (Fade) */
+        .fade {
+            animation-name: fadeEffect;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fadeEffect {
+            from { opacity: .4 }
+            to { opacity: 1 }
+        }
+
+        /* Botones de navegación anterior y siguiente */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.4);
+        }
+
+        .next { right: 0; border-radius: 3px 0 0 3px; }
+        .prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+        /* Indicadores de puntos */
+        .dot-container {
+            text-align: center;
+            padding: 20px;
+            background: #fff;
+        }
+
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 4px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active, .dot:hover { background-color: #717171; }
+    </style>
+</head>
+
+<body>
+  <center>
+    <h1 class="istok-web-bold">Colegio Santa Eufrasia</h1>
+
+
+  <p class="encabezado">Este sitio sirve como soporte para publicar los trabajos de estudiantes de 5tos año. Debajo encontrarán enlaces a los distintos trabajos realizados</p>
+
+  </center>
   
+  <div class="slideshow-container">
+        <!-- Imágenes y sus textos -->
+        <div class="slide fade">
+            <img src="previews/p1.png" alt="Site 1">
+        </div>
+
+        <div class="slide fade">
+            <img src="previews/p2.png" alt="Site 2">
+        </div>
+
+        <div class="slide fade">
+            <img src="previews/p3.png" alt="Site 3">
+        </div>
+
+        <div class="slide fade">
+            <img src="previews/p4.png" alt="Site 4">
+        </div>
+
+        <div class="slide fade">
+            <img src="previews/p5.png" alt="Site 5">
+        </div>
+
+        <div class="slide fade">
+            <img src="previews/p6.png" alt="Site 6">
+        </div>
+
+        <!-- Botones de control -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- Indicadores -->
+    <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(6)"></span> 
+    </div>
+
+
 
   <h2>Trabajos de estudiantes de 5to D 2026</h2>
   <ul>
@@ -28,8 +156,47 @@
       <a href="Trabajos-5tos/Grupo1/index.html"> Enlace al sitio del Grupo 1</a></li>
     <li>....</li>
   </ul>
-  
-  
+
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Control de los botones anterior/siguiente
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Control de los puntos indicadores
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slide");
+            let dots = document.getElementsByClassName("dot");
+            
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+
+        // Transición automática cada 5 segundos
+        setInterval(function() {
+            plusSlides(1);
+        }, 4000);
+    </script>
   
   </body>
 </html>
