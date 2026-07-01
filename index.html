@@ -10,7 +10,9 @@
 
     <style>
         * { box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; margin: 5px; background-color: #f4f4f4; }
+        body { font-family: Arial, sans-serif; margin: 5px; background-color: #f4f4f4;
+        transition: background-color 0.8s ease;
+        }
 
         /* Contenedor principal del slideshow */
         .slideshow-container {
@@ -168,6 +170,16 @@
 
 
     <script>
+
+        const slideColors = [
+            "linear-gradient(135deg,#4d6fa9,#b9d5ff)",
+            "linear-gradient(135deg,#F04D8C,#fff0c5)",
+            "linear-gradient(135deg,#3d7a4d,#d6f3d5)",
+            "linear-gradient(135deg,#74407c,#e5c8ec)",
+            "linear-gradient(135deg,#b44a4a,#ffd7d7)",
+            "linear-gradient(135deg,#486e7a,#d5ecf2)"
+        ];
+
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -199,6 +211,9 @@
             
             slides[slideIndex-1].style.display = "block";  
             dots[slideIndex-1].className += " active";
+
+            document.body.style.background = slideColors[slideIndex - 1];
+
         }
 
         // Transición automática cada 5 segundos
