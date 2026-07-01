@@ -1,0 +1,40 @@
+h1{
+
+	text-align:centers;
+	letter-spacing: 5px;
+	font-family: "New Rocker", system-ui;
+  font-weight: 900;
+  font-style: normal;
+
+}
+
+ p {  
+ 
+color: darkblue;
+font-size: 20px;
+   }
+   
+
+body{
+	background-image:  linear-gradient(  rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("074843291f9388b8462d01083534f520.jpg");
+ }
+  
+p,
+ ul {
+	border:2x solid black;
+	padding:. 5sem ;
+    } 
+
+.block,
+li {
+border:2px solid darkblue;
+padding:5em; 
+  }
+
+ul { 
+display:flex;
+list-style:none;   
+ }
+.block {
+	display:block;
+ }

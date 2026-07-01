@@ -1,0 +1,43 @@
+p{ color:blue;
+font-size-adjust: 0.75;
+border:solid;
+border-color:violet;
+border-radius:20px ;
+background-color :rgb(201, 173, 225);}
+
+h1{color: blueviolet ;
+font-size-adjust: 1.5;
+}
+h2{color: blue ;
+font-size-adjust: 1}
+h3{color: blue ;
+font-size-adjust: 1}
+h1{text-align: center;}
+	  
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.alumni-sans-sc- {
+  font-family: "Alumni Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: violet;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.nav button{
+  margin-right: 10px;
+}

@@ -1,0 +1,28 @@
+p{color: blue;
+front font-size-adjust: 0,75;
+border: solid;
+border-color: violet;
+border-radius: 10px;
+background-color: rgb(100, 190, 100);
+
+h1{color: blueviolet;
+font-size-adjust: 1,5;
+}
+
+h2{color: blue;
+font-size-adjust: 1;
+}	
+h3 {color: blue;}
+
+.bebas-neue-regular {
+font-family: "Bebas Neue", sans-serif;
+font-optical-sizing:auto ;
+font-weight: 500;	
+font-style: normal;
+}
+
+{.caja
+width:200;
+padding:15px;
+border:4px black;
+}
